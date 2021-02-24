@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <style>
+      #form {
+        padding: 5px;
+        background: #eee;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <form id="form">
+        <p>
+          <label>Start</label>
+          <input name="start" type="time" />
+        </p>
+        <p>
+          <label>End</label>
+
+          <input name="end" type="time" />
+        </p>
+        <p>
+          <label>Interval ( in minutes ) </label>
+
+          <input name="interval" type="number" />
+        </p>
+
+        <input name="availability" hidden value="5" type="number" />
+
+        <button type="submit">Generate</button>
+      </form>
+    </div>
+    <div>
+      <h2>List hours interval</h2>
+
+      <ul id="list"></ul>
+    </div>
+
+    <h2>JSON Object</h2>
+    <code id="code"></code>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
